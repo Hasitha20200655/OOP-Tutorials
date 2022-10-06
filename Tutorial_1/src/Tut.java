@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Random;
+
 public class Tut {
     public static void main (String [] args){
         System.out.println("Welcome to Online Learning!\n\nPlease virus go away!\n");
@@ -7,18 +11,39 @@ public class Tut {
                 System.out.println(i);
             }
         }
-        int i = 2;
-        while (i < 100){
-            System.out.println(i);
-            i += 2;
+        int z = 2;
+        while (z < 100){
+            System.out.println(z);
+            z += 2;
         }
 
-        int [] luckyNumber = new int[6]
+        lottery();
+
+    }
+    public static void lottery(){
+        int [] luckyNumber = new int[6];
 
         for(int i = 0; i < luckyNumber.length; i++){
+            Random rand = new Random();
+            boolean isUnique = false;
             int x = 0;
-            x = (int)(Math.random() *(48+1));
-            System.out.println("num "+i+": "+x);
+            while(!isUnique){
+                x = rand.nextInt(2,49);
+//            int x = (int)(Math.random() *(48+1));
+                for (int num: luckyNumber) {
+                    if (num != x){
+                        isUnique = true;
+                    } else if (num == x) {
+                        isUnique = false;
+                        break;
+                    }
+                }
+            }
+
+            luckyNumber[i] = x;
+
         }
+
+        System.out.println(Arrays.toString(luckyNumber));
     }
 }
