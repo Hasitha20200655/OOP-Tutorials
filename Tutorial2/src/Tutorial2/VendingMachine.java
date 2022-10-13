@@ -16,11 +16,12 @@ public class VendingMachine {
     public void insertToken()
     {
         if(numberOfCans > 0){
-            System.out.println("Sorry for the inconvenience Vending Machine is Empty please try again later");
-        }
-        else {
             numberOfTokens++;
             numberOfCans--;
+        }
+        else {
+            System.out.println("Sorry for the inconvenience Vending Machine is Empty please try again later");
+
         }
     }
 
