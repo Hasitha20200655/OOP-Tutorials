@@ -1,26 +1,13 @@
-import java.lang.reflect.Array;
+package Tutorial1;
+
 import java.util.Arrays;
 import java.util.Random;
 
-public class Tut {
-    public static void main (String [] args){
-        System.out.println("Welcome to Online Learning!\n\nPlease virus go away!\n");
+public class Question6 {
+    public void run(){
 
-        for(int i = 1; i < 100; i ++){
-            if (i % 2 == 0){
-                System.out.println(i);
-            }
-        }
-        int z = 2;
-        while (z < 100){
-            System.out.println(z);
-            z += 2;
-        }
+        System.out.println("\nQuestion 6\n");
 
-        lottery();
-
-    }
-    public static void lottery(){
         int [] luckyNumber = new int[6];
 
         for(int i = 0; i < luckyNumber.length; i++){
@@ -46,4 +33,5 @@ public class Tut {
 
         System.out.println(Arrays.toString(luckyNumber));
     }
+
 }
