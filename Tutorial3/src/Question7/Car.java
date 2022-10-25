@@ -17,12 +17,23 @@ public class Car {
     }
     public Car(String licensePlate, double speed1, double maxSpeed1){
         this.licensePlate = licensePlate;
-        this.speed = speed1;
+
+        if(speed1 < 0){
+            this.speed = 0.0;
+        }
+        else if (speed1 > maxSpeed1){
+            this.speed = maxSpeed1;
+        }
+
         if (maxSpeed1 >= 0.0) {
             maxSpeed = maxSpeed1;
         }
         else {
             maxSpeed = 0.0;
         }
+    }
+
+    public void printDetails() {
+        System.out.println("\nLicense Plate : " + licensePlate+"\nCurrent Speed : " + speed + "\nMax Speed : " + maxSpeed);
     }
 }
