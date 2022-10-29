@@ -1,0 +1,23 @@
+interface Equation {
+
+    int numberOfVariables = 1;
+
+    private double solve();     // descriptive method modifier need to be public in an interface
+
+    public void printFormula() {                //method in an interface need to be descriptive
+                                                //with out a method body
+        System.out.println("x^2 + 3x + 1");
+
+    }
+}
+class LinearEquation implements Equation {
+
+    public double solve() {
+        numberOfVariables = 2;
+        // ... details omitted
+    }                                           // need to implement all the methods describe in the interface
+
+    public static void main(String[] args) {
+
+    }
+}
