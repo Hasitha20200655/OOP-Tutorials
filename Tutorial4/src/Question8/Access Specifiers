@@ -1,0 +1,11 @@
+public - can be accessed from any where
+protected - can be accessed with in the class, subclass and same package
+default - can be accessed with in the class and the same package
+private - can be accessed with that class only
+
+
+A protected variable can be accessed from the same package or
+by the derived classes the same way they access their own members,
+but if you create an instance of the super class outside of the package of the superclass,
+you wont be able to access it even if you are extending this same superclass
+(https://stackoverflow.com/questions/37362497/why-cant-i-access-a-protected-variable-in-java-this-way)
