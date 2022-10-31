@@ -7,6 +7,7 @@ public class Passport extends Card{
     private String birthLocation;
     private int expirationYear;
 
+    //constructor
     public Passport(String name, String birthLocation, int expirationYear){
 
         super(name);
@@ -30,6 +31,7 @@ public class Passport extends Card{
         return expirationYear;
     }
 
+    //abstract method in the abstract class is override
     @Override
     public boolean isExpired() {
         Year year = Year.now();

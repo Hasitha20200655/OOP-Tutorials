@@ -6,19 +6,23 @@ public class DriverLicense extends Card {
 
     private int expirationYear;
 
+    //constructor
     public DriverLicense(String name, int expirationYear) {
         super(name);
         this.expirationYear = expirationYear;
     }
 
+    //get Expiration year
     public int getExpirationYear() {
         return expirationYear;
     }
 
+    //Set Expiration year
     public void setExpirationYear(int expirationYear) {
         this.expirationYear = expirationYear;
     }
 
+    //abstract method in the abstract class is override
     @Override
     public boolean isExpired(){
         Year year = Year.now();
