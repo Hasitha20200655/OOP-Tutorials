@@ -15,7 +15,9 @@ public class EmployeeManager {
         e2.print();
         System.out.print("e3 contains: ");
         e3.print();
+
         e1.company_address = a2;
+
         System.out.print("\nAfter e1.company_address = a2\n");
         System.out.print("e1 contains: ");
         e1.print();
@@ -23,17 +25,10 @@ public class EmployeeManager {
         e2.print();
         System.out.print("e3 contains: ");
         e3.print();
-        System.out.println("\nMemory location for e1.company_address object: " +
 
-                e1.company_address);
-
-        System.out.println("Memory location for e2.company_address object: " +
-
-                e2.company_address);
-
-        System.out.println("Memory location for e3.company_address object: " +
-
-                e3.company_address);
+        System.out.println("\nMemory location for e1.company_address object: " + e1.company_address);
+        System.out.println("Memory location for e2.company_address object: " + e2.company_address);
+        System.out.println("Memory location for e3.company_address object: " + e3.company_address);
 
         System.out.println("\ne1.numberOfEmployees: " + e1.numberOfEmployees);
         System.out.println("e2.numberOfEmployees: " + e2.numberOfEmployees);
