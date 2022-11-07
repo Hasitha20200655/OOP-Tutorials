@@ -9,7 +9,7 @@ public class Clock {
 
     Clock (){
         this.hours = 30;
-        this.minutes = 30;
+        this.minutes = 70;
     }
 
     public String getHours (){
@@ -30,6 +30,8 @@ public class Clock {
         //return time;
 
         if(this.hours <= Integer.parseInt(this.getHours()) && this.minutes <= Integer.parseInt(this.getMinutes())){
+            this.hours = 30;
+            this.minutes = 70;
             return "Alarm " + time;
         }
         return time;
