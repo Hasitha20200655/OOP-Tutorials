@@ -6,6 +6,9 @@ import java.util.Arrays;
 public class ArrayMissing {
     public static void main(String[] args) {
 
+        int [] array1 = {9,8,5,2,3,1,5,4,7};
+
+        findToNumbs(array1);
     }
 
     public int [] sortArray(int [] arr){
@@ -32,5 +35,15 @@ public class ArrayMissing {
             }
         }
         return repeating;
+    }
+
+    public void findToNumbs(int[] arr){
+
+        sortArray(arr);
+        int missing = findMissingNum(arr);
+        int repeating = findRepeatingNum(arr);
+
+        System.out.println("Missing number : " + missing);
+        System.out.println("Repeating number : " + repeating);
     }
 }
