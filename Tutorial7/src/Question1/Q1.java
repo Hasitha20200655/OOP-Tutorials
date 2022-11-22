@@ -1,5 +1,7 @@
 package Question1;
 
+import java.util.Arrays;
+
 public class Q1 {
     public static void main(String[] args) {
 
@@ -14,6 +16,12 @@ public class Q1 {
         loadArray(array3);
         loadArray(array4);
         loadArray(array5);
+
+        System.out.println(Arrays.toString(array1)); //[7]
+        System.out.println(Arrays.toString(array2)); //[3, 9]
+        System.out.println(Arrays.toString(array3)); //[4, 10, 18]
+        System.out.println(Arrays.toString(array4)); //[1, 3, 6, 10]
+        System.out.println(Arrays.toString(array5)); //[8, 12, 14, 14, 18]
     }
 
     public static void loadArray(int[] list) {
