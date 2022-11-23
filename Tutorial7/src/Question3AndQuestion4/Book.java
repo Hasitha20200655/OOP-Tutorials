@@ -1,6 +1,6 @@
 package Question3AndQuestion4;
 
-public class Book {
+public class Book implements Comparable<Book>{
 
     String title;
     double price;
@@ -49,5 +49,17 @@ public class Book {
     public String toString(){
         return "\nTitle : " + title + "\nAuthor : " + author +
                 "\nPublished Year : " + publishYear;
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        if(this.publishYear == o.publishYear){
+            return 0;
+        } else if (this.publishYear > o.publishYear) {
+            return 1;
+        } else if (this.publishYear < o.publishYear) {
+            return -1;
+        }
+        return 404;
     }
 }
