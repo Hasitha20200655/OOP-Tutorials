@@ -1,0 +1,17 @@
+
+6	java:S131""Add a default case to this switch.(€ä¿;
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(ôç£s
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(Äá´ì
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(³¼õþ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(õ‹ƒ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(°¢í¦ÿÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(à¿öÑúÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(ì—ÇÙûÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(ðòÔ©þÿÿÿÿ
+n	java:S135""YReduce the total number of break and continue statements in this loop to use at most one.(ìÅúÔ
+
+java:S1319"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(”ï«¼ÿÿÿÿÿ
+y
+java:S1319]"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(‹£Ù@
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î€˜è
