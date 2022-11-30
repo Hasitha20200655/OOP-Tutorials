@@ -13,33 +13,36 @@ public class TestGUI {
         frame.setSize(500,400);
         frame.setVisible(true);
 
-
+        //Manin panel
         JPanel tp = new JPanel();
         tp.setLayout(new BorderLayout());
         JTextField topText = new JTextField("45.5");
         topText.setFont(new Font("SansSerif ", Font.PLAIN, 20));
         tp.add(topText, BorderLayout.NORTH);
 
+        //Center panel
         JPanel centerP = new JPanel(new GridLayout(1,2));
+        tp.add(centerP, BorderLayout.CENTER);
 
-        JPanel btnP = new JPanel();
-        btnP.setLayout(new GridLayout(4,3));
+        //Button left panel
+        JPanel btnL = new JPanel();
+        btnL.setLayout(new GridLayout(4,3));
 
         for (int i = 1; i <= 9; i++) {
-            btnP.add(new JButton("" + i));
+            btnL.add(new JButton("" + i));
         }
-        btnP.add(new JButton("0"));
-        btnP.add(new JButton("."));
+        btnL.add(new JButton("0"));
+        btnL.add(new JButton("."));
 
+        //Button Right panel
         JPanel btnR = new JPanel(new GridLayout(4,1));
         btnR.add(new JButton("+"));
         btnR.add(new JButton("-"));
         btnR.add(new JButton("Clear"));
 
 
-        centerP.add(btnP);
+        centerP.add(btnL);
         centerP.add(btnR);
-        tp.add(centerP, BorderLayout.CENTER);
         frame.add(tp);
     }
 }
