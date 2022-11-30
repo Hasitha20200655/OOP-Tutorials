@@ -8,15 +8,11 @@ public class TestGUI {
     public static void main(String[] args) {
 
         JFrame frame = new JFrame();
-        frame.setTitle("Calculator");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500,400);
-        frame.setVisible(true);
 
         //Manin panel
         JPanel tp = new JPanel();
         tp.setLayout(new BorderLayout());
-        JTextField topText = new JTextField("45.5");
+        JTextField topText = new JTextField("");
         topText.setFont(new Font("SansSerif ", Font.PLAIN, 20));
         tp.add(topText, BorderLayout.NORTH);
 
@@ -44,5 +40,10 @@ public class TestGUI {
         centerP.add(btnL);
         centerP.add(btnR);
         frame.add(tp);
+
+        frame.setTitle("Calculator");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,400);
+        frame.setVisible(true);
     }
 }
